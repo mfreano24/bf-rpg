@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138998de41f36d94ca5ed824f1cf4edf, type: 3}
+  m_Name: Cast_Even_Harder
+  m_EditorClassIdentifier: 
+  DisplayName: Cast Even Harder
+  Message: '{NAME} casts harder than ever before!'
+  ReceiverType: 0
+  ApplicationType: 2
+  TargetStat: 2
+  CalcStat: 2
+  Potency: 4
+  AbilityEffects:
+  - ApplicationType: 2
+    TargetStat: 2
+    CalcStat: 2
+    Potency: 4
+  BPCost: 50
+  SpecialBehavior: 3
+  TurnsToHold: 2
+  ChanceToProc: 1
+  ProcPotency: 100

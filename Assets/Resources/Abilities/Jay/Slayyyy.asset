@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138998de41f36d94ca5ed824f1cf4edf, type: 3}
+  m_Name: Slayyyy
+  m_EditorClassIdentifier: 
+  DisplayName: Slayyyy
+  Message: '{NAME} gives mother! Rizz! Ohio! fucking whatever idk everyones cringing
+    really hard now'
+  ReceiverType: 2
+  ApplicationType: 0
+  TargetStat: 0
+  CalcStat: 0
+  Potency: 100
+  AbilityEffects:
+  - ApplicationType: 0
+    TargetStat: 2
+    CalcStat: 2
+    Potency: 70
+  BPCost: 45
+  SpecialBehavior: 4
+  TurnsToHold: 0
+  ChanceToProc: 1
+  ProcPotency: 100

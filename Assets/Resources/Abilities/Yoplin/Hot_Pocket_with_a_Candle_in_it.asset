@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138998de41f36d94ca5ed824f1cf4edf, type: 3}
+  m_Name: Hot_Pocket_with_a_Candle_in_it
+  m_EditorClassIdentifier: 
+  DisplayName: Hot Pocket with a Candle in it
+  Message: '{NAME} sticks a candle in a hot pocket and slices it like a birthday
+    cake!'
+  ReceiverType: 4
+  ApplicationType: 1
+  TargetStat: 0
+  CalcStat: 3
+  Potency: 80
+  AbilityEffects:
+  - ApplicationType: 1
+    TargetStat: 0
+    CalcStat: 3
+    Potency: 80
+  BPCost: 10
+  SpecialBehavior: 2
+  TurnsToHold: 3
+  ChanceToProc: 1
+  ProcPotency: 100

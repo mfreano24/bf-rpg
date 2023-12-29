@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138998de41f36d94ca5ed824f1cf4edf, type: 3}
+  m_Name: Cool_Guys_Dont_Look_At_Explosions
+  m_EditorClassIdentifier: 
+  DisplayName: Cool Guys Dont Look At Explosions
+  Message: '{NAME} absolutely refuses to look at the explosion he might cause if
+    he gets lucky enough...'
+  ReceiverType: 2
+  ApplicationType: 2
+  TargetStat: 0
+  CalcStat: 0
+  Potency: -1
+  AbilityEffects:
+  - ApplicationType: 2
+    TargetStat: 0
+    CalcStat: 0
+    Potency: -1
+  BPCost: 10
+  SpecialBehavior: 1
+  TurnsToHold: 0
+  ChanceToProc: 0.3
+  ProcPotency: -6
