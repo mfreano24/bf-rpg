@@ -58,6 +58,7 @@ public class Ability : ScriptableObject
     public string DisplayName = "";
     [TextArea(3, 5)]
     public string Message = "{NAME} does something...";
+    public string AnimationStateName = "Attack";
     public EReceiverType ReceiverType = EReceiverType.Self;
     public List<AbilityEffect> AbilityEffects;
 
@@ -106,6 +107,7 @@ public class Ability : ScriptableObject
         
         DialogueManager.Instance.CallNewDialogue(log);
 
+        character.PlayAnimationForSprite(AnimationStateName);
         foreach (AbilityEffect Effect in AbilityEffects)
         {
             ExecuteBehavior(Effect, character, targets);
@@ -157,7 +159,9 @@ public class Ability : ScriptableObject
 
         int amount = (int)(GetStatValueForCharacter(character, Effect.CalcStat) * Effect.Potency / (100 + GetStatValueForCharacter(target, GetDefendingStat(Effect.CalcStat)))); //dota formula!
         DamageTypeContainer NewEntry = new DamageTypeContainer();
+        NewEntry.CauserName = character.CharacterKey;
         NewEntry.TargetName = target.CharacterKey;
+        NewEntry.AnimationName = AnimationStateName;
         NewEntry.bHealing = false;
         NewEntry.Amount = amount;
 
@@ -171,8 +175,10 @@ public class Ability : ScriptableObject
 
         int amount = -(int)(GetStatValueForCharacter(character, Effect.CalcStat) * Effect.Potency / 100); //dota formula? kinda? what's the "defending" stat on calculating heals
         DamageTypeContainer NewEntry = new DamageTypeContainer();
+        NewEntry.CauserName = character.CharacterKey;
         NewEntry.TargetName = target.CharacterKey;
-        NewEntry.bHealing = true;
+        NewEntry.AnimationName = AnimationStateName;
+        NewEntry.bHealing = false;
         NewEntry.Amount = amount;
 
         DialogueManager.Instance.CallNewDialogue(target.CharacterKey + " heals " + -amount + " HP!", false, NewEntry);
@@ -184,6 +190,7 @@ public class Ability : ScriptableObject
         if (target == null || target.bIsDead) return;
 
         target.StatModifier(Effect.TargetStat, Effect.Potency);
+       
         DialogueManager.Instance.CallNewDialogue(target.CharacterKey + (Effect.Potency > 0 ? " raises" : " lowers") + " their " + Effect.TargetStat.ToString() + " by " + Mathf.Abs(Effect.Potency));
     }
 

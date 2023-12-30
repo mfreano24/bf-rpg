@@ -15,11 +15,8 @@ MonoBehaviour:
   DisplayName: Maximum Annoyance
   Message: '{NAME} cracks a big smile at the enemy side, like he knows something
     they don''t!'
+  AnimationStateName: Cast
   ReceiverType: 2
-  ApplicationType: 2
-  TargetStat: 0
-  CalcStat: 0
-  Potency: -1
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 1

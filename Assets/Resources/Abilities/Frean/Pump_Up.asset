@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Pump Up
   Message: '{NAME} pumps themselves up!'
+  AnimationStateName: All_Allies
   ReceiverType: 0
-  ApplicationType: 2
-  TargetStat: 0
-  CalcStat: 0
-  Potency: 2
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 0

@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Snack Share
   Message: '{NAME} holds a bag of pretzels out towards {TARGET}...'
+  AnimationStateName: All_Allies
   ReceiverType: 3
-  ApplicationType: 1
-  TargetStat: 0
-  CalcStat: 3
-  Potency: 85
   AbilityEffects:
   - ApplicationType: 1
     TargetStat: 0

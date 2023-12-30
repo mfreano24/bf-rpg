@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Loosen Up
   Message: '{NAME} relaxes his shoulders!'
+  AnimationStateName: Cast
   ReceiverType: 0
-  ApplicationType: 2
-  TargetStat: 4
-  CalcStat: 0
-  Potency: 2
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 4

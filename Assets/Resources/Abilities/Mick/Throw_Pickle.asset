@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Throw Pickle
   Message: '{NAME} throws a gherkin at {TARGET}!'
+  AnimationStateName: Cast
   ReceiverType: 1
-  ApplicationType: 0
-  TargetStat: 4
-  CalcStat: 4
-  Potency: 100
   AbilityEffects:
   - ApplicationType: 0
     TargetStat: 4

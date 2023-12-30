@@ -15,11 +15,8 @@ MonoBehaviour:
   DisplayName: Cool Guys Dont Look At Explosions
   Message: '{NAME} absolutely refuses to look at the explosion he might cause if
     he gets lucky enough...'
+  AnimationStateName: All_Allies
   ReceiverType: 2
-  ApplicationType: 2
-  TargetStat: 0
-  CalcStat: 0
-  Potency: -1
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 0

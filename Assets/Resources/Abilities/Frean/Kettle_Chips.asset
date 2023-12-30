@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Kettle Chips
   Message: '{NAME} eats some kettle chips...'
+  AnimationStateName: Cast
   ReceiverType: 0
-  ApplicationType: 1
-  TargetStat: 0
-  CalcStat: 1
-  Potency: 25
   AbilityEffects:
   - ApplicationType: 1
     TargetStat: 0

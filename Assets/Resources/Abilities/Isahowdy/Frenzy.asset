@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Frenzy
   Message: '{NAME} riles up the kitties!'
+  AnimationStateName: Trick_Shots
   ReceiverType: 5
-  ApplicationType: 2
-  TargetStat: 4
-  CalcStat: 4
-  Potency: 3
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 4

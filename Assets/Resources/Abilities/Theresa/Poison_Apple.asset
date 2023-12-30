@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Poison Apple
   Message: '{NAME} hands a dubious looking apple over to the enemies!'
+  AnimationStateName: All_Allies
   ReceiverType: 2
-  ApplicationType: 2
-  TargetStat: 4
-  CalcStat: 0
-  Potency: -1
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 4

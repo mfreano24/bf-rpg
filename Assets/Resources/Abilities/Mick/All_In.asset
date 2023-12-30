@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: All In
   Message: '{NAME} goes all in!!'
+  AnimationStateName: Cast
   ReceiverType: 0
-  ApplicationType: 2
-  TargetStat: 4
-  CalcStat: 4
-  Potency: 1
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 4

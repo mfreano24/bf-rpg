@@ -15,11 +15,8 @@ MonoBehaviour:
   DisplayName: Where is the Cheese
   Message: '{NAME} hands out an assortment of goudas, bries, and colby jacks to the
     party!'
+  AnimationStateName: All_Allies
   ReceiverType: 4
-  ApplicationType: 1
-  TargetStat: 3
-  CalcStat: 3
-  Potency: 100
   AbilityEffects:
   - ApplicationType: 1
     TargetStat: 3

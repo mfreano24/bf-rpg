@@ -36,8 +36,6 @@ public class Character : MonoBehaviour
 
     public bool bIsDead = false;
 
-    
-
     #region Stat-Getters
     public int HP
     {
@@ -201,6 +199,7 @@ public class Character : MonoBehaviour
         CurrentBP = CalculatedStats.MaxBP;
 
         Brain = GetComponent<AIBehaviour>();
+        UpdatePresentation(true);
     }
 
     public void ReplaceWithTagIn(string NewKey)
@@ -230,6 +229,8 @@ public class Character : MonoBehaviour
         CalculatedStats.MAG = Globals.CalculateFromBase(BaseStats.MAG, Level);
         CalculatedStats.HEA = Globals.CalculateFromBase(BaseStats.HEA, Level);
         CalculatedStats.AGL = Globals.CalculateFromBase(BaseStats.AGL, Level);
+
+        UpdatePresentation(false);
     }
 
     private List<Character> Allies;
@@ -495,6 +496,45 @@ public class Character : MonoBehaviour
                 }
             }
         }
+    }
+
+    //presentation bits
+    Animator SpriteAnimator;
+    MeshRenderer MeshRenderer;
+
+    void UpdatePresentation(bool bInitializing)
+    {
+        if (isAI) return;
+
+        if(MeshRenderer == null)
+        {
+            MeshRenderer = GetComponent<MeshRenderer>();
+        }
+
+        MeshRenderer.material = Globals.CharacterToPresentationData[CharacterKey].PedestalMaterial;
+
+        if(!bInitializing)
+        {
+            PlayAnimationForSprite("TagOut");
+        }
+    }
+
+    public void SwapSpriteOut()
+    {
+        Debug.Log("Sprite swapped to " + CharacterKey + "'s!");
+    }
+
+    public void PlayAnimationForSprite(string StateName)
+    {
+        if (isAI) return;
+
+        //get on request so we don't load this thing
+        if(SpriteAnimator == null)
+        {
+            SpriteAnimator = transform.GetChild(0).GetComponent<Animator>();
+        }
+
+        SpriteAnimator.Play(StateName);
     }
 
     public void TagOutCall(string KeyToSwapWith)

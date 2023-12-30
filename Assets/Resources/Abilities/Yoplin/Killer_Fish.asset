@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Killer Fish
   Message: '{NAME} is a killer fish from San Diego!'
+  AnimationStateName: Cast
   ReceiverType: 2
-  ApplicationType: 0
-  TargetStat: 0
-  CalcStat: 2
-  Potency: 75
   AbilityEffects:
   - ApplicationType: 0
     TargetStat: 0

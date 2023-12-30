@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Rabbit Request
   Message: '{NAME} asks the enemies if they''ve seen any bunny boys around lately...'
+  AnimationStateName: All_Allies
   ReceiverType: 2
-  ApplicationType: 2
-  TargetStat: 2
-  CalcStat: 2
-  Potency: -1
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 2

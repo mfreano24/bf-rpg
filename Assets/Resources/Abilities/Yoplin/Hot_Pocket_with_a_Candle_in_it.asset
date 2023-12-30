@@ -15,11 +15,8 @@ MonoBehaviour:
   DisplayName: Hot Pocket with a Candle in it
   Message: '{NAME} sticks a candle in a hot pocket and slices it like a birthday
     cake!'
+  AnimationStateName: All_Allies
   ReceiverType: 4
-  ApplicationType: 1
-  TargetStat: 0
-  CalcStat: 3
-  Potency: 80
   AbilityEffects:
   - ApplicationType: 1
     TargetStat: 0

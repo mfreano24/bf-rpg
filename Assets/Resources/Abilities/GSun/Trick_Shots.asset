@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Trick Shots
   Message: '{NAME} starts moving faster than the eyes can perceive!'
+  AnimationStateName: Trick_Shots
   ReceiverType: 2
-  ApplicationType: 0
-  TargetStat: 0
-  CalcStat: 0
-  Potency: 35
   AbilityEffects:
   - ApplicationType: 0
     TargetStat: 0

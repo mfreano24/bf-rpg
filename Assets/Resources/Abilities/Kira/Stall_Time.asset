@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Stall Time
   Message: '{NAME} starts stalling!'
+  AnimationStateName: Cast
   ReceiverType: 0
-  ApplicationType: 1
-  TargetStat: 0
-  CalcStat: 3
-  Potency: 85
   AbilityEffects:
   - ApplicationType: 1
     TargetStat: 0

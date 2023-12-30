@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Advanced Calculations
   Message: '{NAME} is calculating all the ways to spell "Cuisine..."'
+  AnimationStateName: Cast
   ReceiverType: 0
-  ApplicationType: 2
-  TargetStat: 2
-  CalcStat: 2
-  Potency: 2
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 2

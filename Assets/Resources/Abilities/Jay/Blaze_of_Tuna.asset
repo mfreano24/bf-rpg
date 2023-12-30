@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Blaze of Tuna
   Message: '{NAME} envelops {TARGET} in a veil of Subway Brand Tuna!'
+  AnimationStateName: Cast
   ReceiverType: 1
-  ApplicationType: 0
-  TargetStat: 2
-  CalcStat: 2
-  Potency: 160
   AbilityEffects:
   - ApplicationType: 0
     TargetStat: 2

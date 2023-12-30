@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Bad to the Bone
   Message: '{NAME} plays "Bad to the Bone!"'
+  AnimationStateName: Cast
   ReceiverType: 2
-  ApplicationType: 2
-  TargetStat: 1
-  CalcStat: 1
-  Potency: -1
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 1

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
+using UnityEditor.Animations;
 
 public class CharacterData
 {
@@ -34,13 +35,17 @@ public class CharacterData
 //this isnt for saving yet
 public static class Globals
 {
+    static List<string> NameList;
+
     public static Dictionary<string, CharacterData> StoredCharacterDataByCharacterKey;
+    public static Dictionary<string, PresentationData> CharacterToPresentationData;
 
     public static Ability AttackAbility;
 
     public static void Init()
     {
         StoredCharacterDataByCharacterKey = new Dictionary<string, CharacterData>();
+        NameList = new List<string>();
 
         AttackAbility = Resources.Load("Abilities/Attack") as Ability;
 
@@ -58,7 +63,17 @@ public static class Globals
                 CharacterData cd = new CharacterData();
                 cd = DeserializeStr(js);
                 StoredCharacterDataByCharacterKey[cd.CharacterKey] = cd;
+                NameList.Add(cd.CharacterKey);
             }
+        }
+
+        //presentation data
+        CharacterToPresentationData = new Dictionary<string, PresentationData>();
+        foreach(string Name in NameList)
+        {
+            path = "PresentationData/" + Name;
+            PresentationData next = Resources.Load(path) as PresentationData;
+            CharacterToPresentationData.Add(Name, next);
         }
     }
 

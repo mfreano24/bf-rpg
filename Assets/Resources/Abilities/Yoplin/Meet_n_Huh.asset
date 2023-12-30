@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Meet n Huh
   Message: '{NAME} bolsters his knowledge on Family Feud!'
+  AnimationStateName: Cast
   ReceiverType: 0
-  ApplicationType: 2
-  TargetStat: 0
-  CalcStat: 0
-  Potency: 1
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 2

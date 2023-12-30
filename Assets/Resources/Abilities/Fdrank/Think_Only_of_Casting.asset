@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Think Only of Casting
   Message: '{NAME} thinks only of casting and nothing else!'
+  AnimationStateName: Cast
   ReceiverType: 0
-  ApplicationType: 2
-  TargetStat: 3
-  CalcStat: 3
-  Potency: 2
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 3

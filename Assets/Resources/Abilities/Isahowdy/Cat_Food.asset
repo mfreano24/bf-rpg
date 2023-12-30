@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Cat Food
   Message: '{NAME} serves up some salmon!'
+  AnimationStateName: Cast
   ReceiverType: 5
-  ApplicationType: 2
-  TargetStat: 0
-  CalcStat: 0
-  Potency: 3
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 0

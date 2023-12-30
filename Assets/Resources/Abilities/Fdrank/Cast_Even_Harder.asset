@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Cast Even Harder
   Message: '{NAME} casts harder than ever before!'
+  AnimationStateName: Cast
   ReceiverType: 0
-  ApplicationType: 2
-  TargetStat: 2
-  CalcStat: 2
-  Potency: 4
   AbilityEffects:
   - ApplicationType: 2
     TargetStat: 2

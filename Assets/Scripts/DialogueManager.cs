@@ -6,9 +6,11 @@ using static UnityEngine.GraphicsBuffer;
 
 public class DamageTypeContainer
 {
+    public string CauserName = "";
     public string TargetName = "";
     public int Amount = 0;
     public bool bHealing = false;
+    public string AnimationName = "Attack";
 }
 
 public class DialogueManager : MonoBehaviour
@@ -103,9 +105,10 @@ public class DialogueManager : MonoBehaviour
 
         if (damageData != null)
         {
-            Character c;
-            BattleManager.Instance.GetCharacterByName(damageData.TargetName, out c);
-            c.TakeDamage(damageData.Amount, damageData.bHealing);
+            Character target, causer;
+            BattleManager.Instance.GetCharacterByName(damageData.TargetName, out target);
+            BattleManager.Instance.GetCharacterByName(damageData.CauserName, out causer);
+            target.TakeDamage(damageData.Amount, damageData.bHealing);
         }
     }
 

@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Draw an Among Us on Your Face
   Message: '{NAME} doodles an oddly familiar red spaceman on {TARGET}''s face!'
+  AnimationStateName: Trick_Shots
   ReceiverType: 1
-  ApplicationType: 0
-  TargetStat: 0
-  CalcStat: 0
-  Potency: 130
   AbilityEffects:
   - ApplicationType: 0
     TargetStat: 0
